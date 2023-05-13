@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+function imprimir (mensaje){
+    document.write(mensaje + "<br>");
+}
+
+function imprimirPalabra () {
+let palabra = prompt("Ingresa la palabra");
+let numero = Math.round(Math.random()*100);
+  if (palabra.length >= 1 && palabra.length <= 50){
+    for (i = 0; i <= numero; i++){
+      imprimir(palabra);
+    }
+  }
+}
+imprimirPalabra();
+</script>

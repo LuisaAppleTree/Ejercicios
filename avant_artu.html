@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Job Avant</title>
+</head>
+<body>
+    <p>Ejercicio: de un string, ingresado por prompt, encontrar en que array y en que índice de este array se encuentra la palabra ingresada por prompt.</p>
+</body>
+</html>
+<script>
+    let palabra = prompt("Ingresa la palabra a buscar");
+    let array1 = ["Rosa", "Azul", "Verde", "Blanco"];
+    let array2 = ["Gato", "Perro", "Abeja", "Vaca"];
+    let array3 = ["Dulce", "Salado", "Acido", "Agrio"];
+    function palabraEncontrada() {
+        for (i = 0; i <= array1.length; i++){
+            if (palabra == array1[i]){
+                alert("Palabra " + palabra + " encontrada en el array: " + array1 + " en el índice: " + array1[i]);
+                break;
+            } 
+        } 
+        for (j = 0; j <= array2.length; j++){
+            if (palabra == array2[j]){
+                alert("Palabra " + palabra + " encontrada en el array: " + array2 + " en el índice: " + array2[j]);
+                break;
+            }
+        }
+        for (k = 0; k <= array3.length; k++){
+            if (palabra == array3[k]){
+                alert("Palabra " + palabra + " encontrada en el array: " + array3 + " en el índice: " + array3[k]);
+                break;
+            }
+        }
+    }
+    palabraEncontrada();
+</script>
